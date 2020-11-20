@@ -25,11 +25,8 @@ const api = {
   heroes: {
     listHeroes() {
       return callApi('/heroes');
-      //return [];
-      //throw new Error('501: Error interno.');
     },
     createHeroe(heroe) {
-      //throw new Error('501: Error interno, intente en unos minutos.');
       return callApi(`/heroes`, {
         method: 'POST',
         body: JSON.stringify(heroe),
